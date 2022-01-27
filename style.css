@@ -153,14 +153,13 @@ li a{
 .product{
    width: 45%;
    display: flex;
-   justify-content: space-around;
    align-items: center;
    padding: 10px 0;
    border-bottom: 1px solid lightgrey;
 }
 
-.products span{
-    margin-left: 1rem;
+.name-shoppbag{
+    margin-left: 10px;
 }
 
 .products{
@@ -168,12 +167,14 @@ li a{
     display: flex;
     flex-wrap: wrap;
 }
+
 .products img{
     width: 75px;
     height: 112px;
     object-position: center;
     object-fit: cover;
 }
+
 .cross{
     font-size: 25px;
     color: rgb(247, 3, 3);
@@ -181,4 +182,27 @@ li a{
     margin-right: 10px;
     cursor: pointer;
 }
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle{
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
+}
+
+
+
+
+
+
+
+/* tid javascript shopping cart tutorial part 5/5 tid 24.00*/
 

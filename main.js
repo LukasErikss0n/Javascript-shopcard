@@ -14,7 +14,7 @@ let products = [
         inCart: 0
     },
     {
-        name: 'Rolex submarin date',
+        name: 'Rolex submarin date ',
         tag: 'rolex',
         price: 7000,
         inCart: 0
@@ -107,7 +107,7 @@ function displayCart(){
             <div class="product">
                 <i class=" cross fas fa-times"></i>
                 <img src="./img/${item.tag}.jpg">
-                <span>${item.name}</span>
+                <span class="name-shoppbag">${item.name}</span>
             </div>
             <div class ="price">$${item.price},00</div>
             <div class ="quantity">
@@ -121,17 +121,19 @@ function displayCart(){
             `;
         });
 
-        productContainer.innerHtml += `
+        productContainer.innerHTML += `
             <div class ="basketTotalContainer">
                 <h4 class="basketTotalTitle">
-                Basket Total
+                    Basket Total
                 </h4>
                 <h4 class ="basketTotal">
-                $${cartCost},00
+                    $${cartCost},00
                 </h4>
         `;
     }
 }
+
+
 
 onLoadCartNummbers()
 displayCart()
